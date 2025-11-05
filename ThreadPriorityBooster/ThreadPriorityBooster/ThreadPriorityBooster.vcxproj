@@ -19,13 +19,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{FF26FBE0-A460-1AEE-453B-393F1BA10C08}</ProjectGuid>
+    <ProjectGuid>{D89DF086-DCEA-373F-F9FD-B2CEA0BBB419}</ProjectGuid>
     <TemplateGuid>{dd38f7fc-d7bd-488b-9242-7d8754cde80d}</TemplateGuid>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
     <Configuration>Debug</Configuration>
     <Platform Condition="'$(Platform)' == ''">x64</Platform>
-    <RootNamespace>WDM_Sample1</RootNamespace>
+    <RootNamespace>ThreadPriorityBooster</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
@@ -90,7 +90,10 @@
     <FilesToPackage Include="$(TargetPath)" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Sample.cpp" />
+    <ClCompile Include="Booster.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BoosterCommon.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
